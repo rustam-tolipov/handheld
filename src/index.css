@@ -1,0 +1,40 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  user-select: none;
+}
+
+.content {
+  width: 1800px;
+  height: 1260px;
+  background: #ffffff27;
+}
+
+.title {
+  font-size: 12px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.youtube-container {
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 14/9.8;
+  /* No clicking/hover effects */
+  pointer-events: none;
+}
+
+.youtube-container iframe {
+  /* Extend it beyond the viewport... */
+  width: 300%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -100%;
+}
