@@ -65,6 +65,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 2.4rem;
+  filter: brightness(1.2);
 }
 
 .navbar {
