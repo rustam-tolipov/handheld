@@ -1,17 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 #root {
   width: 100vw;
   height: 100vh;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   user-select: none;
+  font-family: 'Play', sans-serif;
+  /* height: 100%;
+  width: 100%; */
 }
 
 .content {
   width: 1800px;
   height: 1260px;
-  background: #ffffff27;
+  background-color: black;
+
+  padding: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1.2rem;
 }
 
 .title {
@@ -25,16 +42,107 @@ body {
 .youtube-container {
   overflow: hidden;
   width: 100%;
-  /* Keep it the right aspect-ratio */
-  aspect-ratio: 14/9.8;
-  /* No clicking/hover effects */
+
+  aspect-ratio: 14/9.9;
+
   pointer-events: none;
 }
 
 .youtube-container iframe {
-  /* Extend it beyond the viewport... */
   width: 300%;
   height: 100%;
-  /* ...and bring it back again */
+
   margin-left: -100%;
+}
+
+.youtube-player {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.control {
+  height: 98%;
+  width: 100%;
+  background-color: black;
+
+  padding: 2.4rem 2.4rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.navbar {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  color: #fff;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.battery {
+  font-size: 6rem;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.screen {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+.screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selected {
+  background-color: #f2f2f2;
+  outline: 10px solid gray;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3.2rem;
 }
