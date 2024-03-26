@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Rustamxon7/handheld">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Handheld</h3>
@@ -60,7 +60,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](public/screenshot.jpeg)
 
 Explore our Handheld 3D Interactive Model repository! Crafted with React Three Fiber and Blender, this project offers an immersive experience with baked textures and clickable buttons. Dive into the code and witness the magic of interactive 3D modeling brought to life.
 
